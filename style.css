@@ -1,0 +1,94 @@
+:root{
+    --primary-color: rgb(100, 131, 129);
+    --secondary-color: rgb(228, 253, 225);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+
+}
+
+body,html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8em;
+}
+
+.ul-design li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.ul-design{
+    list-style: none;
+    display: block;
+    float: left;    
+    text-align: center;
+    float: right;
+}
+
+.ul-design li{
+    margin-top: 10px;
+    float: left;
+}
+
+.ul-design li a:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+
+
+#nav-bar {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.75em;
+    overflow: auto;
+}
+
+.logo{
+    text-align: center;
+    float: left;
+    padding: 0.5rem;
+    padding-left: 3rem;
+}
+
+.btn{
+    transition: all 0.5s;
+    cursor: pointer;
+    width: 200px;
+    margin: 5px;
+}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.login-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.login-btn:hover span {
+  padding-right: 25px;
+}
+
+.login-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
