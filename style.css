@@ -11,12 +11,12 @@
 a{
     text-decoration: none;
     color: var(--primary-color);
-
 }
 
 body,html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.8em;
+    background-color: #ebe7e7;
 }
 
 .ul-design li a{
@@ -46,19 +46,25 @@ body,html {
 }
 
 
-
 #nav-bar {
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     color: var(--primary-color);
-    padding: 0.75em;
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 1rem;
+    margin: 0 0 40px  0;
 }
+
 
 .logo{
     text-align: center;
     float: left;
-    padding: 0.5rem;
-    padding-left: 3rem;
+    margin-left: 3rem;
+    top: 0;
 }
 
 .btn{
@@ -91,4 +97,134 @@ body,html {
 .login-btn:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+
+.footer{
+    background: #000;
+    color: aliceblue;
+    text-align: center;
+    align-self: baseline;
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+
+
+#profile{
+    margin: 3rem;
+    display: flex;
+    background-image: linear-gradient(to right,rgb(255, 255, 255), rgb(204, 248, 250)); 
+    padding: 20px;
+    box-shadow: 7px 7px 7px #c3c3c3;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    /* display: none; */
+}
+
+#profile:hover{
+    box-shadow: 15px 15px 15px #c3c3c3;
+}
+
+#profile img:hover{
+    transform: scale(1.2);
+    margin: 0.75rem;
+    margin-right: 50px;
+}
+
+#profile img{
+    margin: 0.25em;
+    box-align: left; 
+    height: 150px;
+    width: 200px;
+    border-radius: 20%;
+    margin-right: 30px;
+    transition: 0.5s all ease-in-out;
+}
+
+/* Sidebar profile */
+
+#profile-1{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right,rgb(255, 255, 255), rgb(204, 248, 250)); 
+    padding: 20px;
+    box-shadow: 8px 8px 8px #c3c3c3;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    width: 450px;
+    float: right;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 100px;
+    height: 480px;
+}
+
+#profile-1:hover{
+    box-shadow: 18px 18px 15px #c3c3c3;
+}
+
+#profile-1 img:hover{
+    transform: scale(1.2);
+    margin: 0.75em;
+    margin-bottom: 50px;
+}
+
+#profile-1 img{
+    margin: 0.25em;
+    box-align: top; 
+    height: 150px;
+    width: 200px;
+    border-radius: 20%;
+    margin-bottom: 30px;
+    transition: 0.5s all ease-in-out;
+}
+
+.projects{
+    margin: 1rem;
+    flex-direction: column;
+}
+
+.projects h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 80px;
+    overflow: visible;
+    margin: 40px;
+    height: 40;
+    background: -webkit-linear-gradient( right top, rgb(65, 65, 248), rgb(0, 255, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pr {
+    display: flex;
+    height: 200px;
+    width: 700px;
+    margin: 1.9rem;
+    padding: 1rem;
+    align-items: center;
+    background-image: linear-gradient(to right,rgb(231, 217, 217), rgb(206, 234, 235)); 
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px  #c3c3cc;
+    transition: 0.4s all ease-in-out;
+}
+.pr img{
+    height: 170px;
+    box-align: left;
+    border-radius:10%;
+    margin: 20px;
+    transition: 0.8s all ease-in-out;
+}
+
+.pr img:hover{
+    transform: scale(1.1);
+    margin: 30px;
+}
+
+.pr:hover{
+    box-shadow: 20px  20px 10px  #c3c3cc;
+    transform: scale(1.1);
+    
 }
